@@ -25,10 +25,10 @@
           display: grid;
           grid-column-gap: 4vw;
           grid-template-areas:
-            "header header"
-            "article sidebar"
-            "footer footer";
-          grid-template-columns: 4fr 3fr;
+            "header header header"
+            "sidebar article img"
+            "footer footer footer";
+          grid-template-columns: 4fr 2fr 3fr;
           grid-template-rows: auto;
           margin: 1vw;
         }
@@ -54,7 +54,7 @@
       }
 
       footer {
-        background-color: hotpink;
+        background-color: rgb(95, 44, 212);
         grid-area: footer;
       }
     </style>
@@ -70,6 +70,7 @@
         footer, stretching them across the grid.
       </p>
     </article>
+    <img src="img\casey-horner-778570-unsplash.jpg">
     <footer>Page Footer</footer>
   </body>
 </html>

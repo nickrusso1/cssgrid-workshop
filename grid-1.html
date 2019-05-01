@@ -6,40 +6,41 @@
     <title>2 columns, 3 rows</title>
     <link rel="stylesheet" href="css/stylesheet.css" />
     <style type="text/css">
-      body {
+      body {      
         display: grid;
         grid-template-columns: 1fr 2fr 3fr;
-        grid-gap: 1em;
+        grid-template-rows: 100 px 3fr 20px; 
         margin: var(--spacing-large);
         color: var(--ucla-black-80);
       }
 
-      body > * {
+      body > * { 
         padding: 1em;
         border-radius: 5px;
       }
 
       header {
         grid-column: 1 / -1;
-        grid-row: 1;
+        grid-row: 3;
         background-color: var(--ucla-lighter-blue);
       }
 
       aside {
-        grid-column: 1;
-        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+        grid-row: 1;
         background-color: var(--ucla-gold);
     
       }
       article {
-        background-color: var(--ucla-black-10);
-        grid-column: 2 / 4;
         grid-row: 2;
+        grid-column: 1 / -1;
+        background-color: var(--ucla-black-10);
       }
 
       footer {
+        grid-row: 1; 
+        grid-column: 2  / 5;
         background-color: hotpink;
-        grid-column: 1 / 4;
       }
     </style>
   </head>
